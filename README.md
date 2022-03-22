@@ -28,15 +28,18 @@ Users should be able to:
 
 Mobile
 
+![image](https://user-images.githubusercontent.com/90436675/159397674-8a4f4786-d664-4e72-89a9-5e9924c19f67.png)
 
 
 Desktop
+
+![image](https://user-images.githubusercontent.com/90436675/159397254-b999ff08-e051-421e-8d13-37aa1b7947a7.png)
 
 
 ### Links
 
 - Solution URL: https://github.com/Marvin-Erazo/profile-card-component
-- Live Site URL: https://3-column-card-me.netlify.app/
+- Live Site URL: https://profile-card-me.netlify.app/
 
 ## My process
 
