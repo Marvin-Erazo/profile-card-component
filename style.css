@@ -29,7 +29,7 @@ body {
   background: url("images/bg-pattern-top.svg") -50% 200% no-repeat, url("images/bg-pattern-bottom.svg") 150% -150% no-repeat, var(--bg-color);
 }
 
-body footer {
+button{
   position: fixed;
   bottom: 10px;
   right: 10px;
@@ -46,33 +46,30 @@ body footer {
   color: var(--paragraph-font);
   font-family: var(--paragraph-font);
   font-size: .7rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
-body footer a {
+button a {
   text-decoration: none;
   color: white;
 }
 
-body footer img {
+button svg {
   width: 60px;
-  border-radius: 100%;
-  margin-left: 20px;
+  height: 60px;
 }
 
-body footer .author {
+.author {
   display: none;
-  padding: 5px 10px;
-  border-radius: 10px 10px 0px 10px;
 }
 
-body footer img:hover {
-  cursor: pointer;
-}
-
-body footer .author-active {
-  background-color: var(--line-color);
-  padding: 5px 10px;
-  border-radius: 10px 10px 0px 10px;
+.author-active {
+  text-align: left;
+  background-color: #2196f3;
+  padding: 8px 10px;
+  border-radius: 10px 10px 10px 10px;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
   -webkit-animation-name: authorShow;
@@ -107,12 +104,12 @@ body footer .author-active {
   }
 }
 
-body main {
+main {
   background-color: #fff;
   border-radius: 10px;
 }
 
-body main header {
+main header {
   background-image: url("images/bg-pattern-card.svg");
   width: 100%;
   height: 150px;
@@ -125,7 +122,7 @@ body main header {
   border-radius: 10px 10px 0px 0px;
 }
 
-body main header img {
+main header img {
   border-radius: 100%;
   margin: auto;
   -webkit-transform: translateY(75px);
@@ -133,14 +130,33 @@ body main header img {
   border: 5px solid #fff;
 }
 
-body main section {
+main section {
   text-align: center;
   font-family: var(--paragraph-font);
   width: 100%;
-  padding: 0px 40px;
+  padding: 0px 30px;
 }
 
-body main .line {
+.profile-info h1{
+  color: var(--title-font-color);
+  font-size: 1.35rem;
+  margin-bottom: 15px;
+}
+
+.profile-info span,p{
+  color: var(--paragraph-font-color);
+  margin-left: 5px;
+}
+
+.profile-info span{
+  font-weight: 400;
+}
+
+.profile-info p{
+  font-weight: 700;
+}
+
+.line {
   margin: 30px 0px;
   background-color: var(--line-color);
   width: 100%;
@@ -148,21 +164,48 @@ body main .line {
   opacity: .4;
 }
 
-body main .profile-details {
+.profile-details {
   margin-bottom: 30px;
 }
 
-body main .profile-details ul {
+.profile-details ul {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   list-style: none;
 }
 
-body main .profile-details ul li {
-  border: 1px solid;
+.profile-details li {
   text-align: center;
-  padding: 0px 30px;
+  padding: 0px 20px;
 }
-/*# sourceMappingURL=style.css.map */
+
+.profile-details li h1{
+  font-size: 1.35rem;
+  color: var(--title-font-color);
+  margin-bottom: 5px;
+}
+
+.profile-details li p{
+  font-size: .8rem;
+  color: var(--paragraph-font-color);
+  letter-spacing: 2px;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+  main{
+    width: 85%;
+  }
+
+  main section{
+    padding: 0 20px;
+  }
+
+  .profile-details li {
+    text-align: center;
+    padding: 0px 10px;
+  }
+}
